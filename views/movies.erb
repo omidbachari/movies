@@ -1,0 +1,12 @@
+<h2><%= params["movie"] %></h2>
+<ul>
+ <li><%= @movie["id"] %></li>
+ <li><%= @movie["title"] %></li>
+ <li><%= @movie["year"] %></li>
+<%unless @movie["synopsis"] == "" || @movie["synopsis"] == nil %>
+ <li><%= @movie["synopsis"] %></li>
+ <%end%>
+ <li><%= @movie["rating"] %></li>
+ <li><%= @movie["genre"] %></li>
+ <li><%= @movie["studio"] %></li>
+</ul>

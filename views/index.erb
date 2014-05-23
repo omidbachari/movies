@@ -1,0 +1,6 @@
+<h3> Movies </h3>
+<ol>
+  <% @movies.each do |movie| %>
+    <li><a href="/movie/<%= movie["title"] %>"> <%= "#{movie["title"]}" %></a></li>
+  <% end %>
+</ol>
